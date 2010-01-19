@@ -46,3 +46,36 @@
 [submodule "Bundles/webrat.tmbundle"]
 	path = Bundles/webrat.tmbundle
 	url = git://github.com/bmabey/webrat-tmbundle.git
+[submodule "Bundles/sproutcore.tmbundle"]
+	path = Bundles/sproutcore.tmbundle
+	url = git://github.com/sproutit/sproutcore-tmbundle.git
+[submodule "Bundles/cappuccio.tmbundle"]
+	path = Bundles/cappuccio.tmbundle
+	url = git://github.com/malkomalko/Cappuccino.tmbundle.git
+[submodule "Bundles/mootools.tmbundle"]
+	path = Bundles/mootools.tmbundle
+	url = git://github.com/subtleGradient/MooTools.tmBundle.git
+[submodule "Bundles/formtastic.tmbundle"]
+	path = Bundles/formtastic.tmbundle
+	url = git://github.com/grimen/formtastic_tmbundle.git
+[submodule "Bundles/sinatra.tmbundle"]
+	path = Bundles/sinatra.tmbundle
+	url = git://github.com/foca/sinatra-tmbundle.git
+[submodule "Bundles/haml.tmbundle"]
+	path = Bundles/haml.tmbundle
+	url = git://github.com/douglasjarquin/ruby-haml-tmbundle.git
+[submodule "Bundles/sass.tmbundle"]
+	path = Bundles/sass.tmbundle
+	url = git://github.com/seaofclouds/sass-textmate-bundle.git
+[submodule "Bundles/guimate.tmbundle"]
+	path = Bundles/guimate.tmbundle
+	url = git://github.com/subtleGradient/guimate.tmbundle.git
+[submodule "Bundles/rsync-ssh.tmbundle"]
+	path = Bundles/rsync-ssh.tmbundle
+	url = git://github.com/davidolrik/synchronize-remote-directory-rsync-ssh-tmbundle.git
+[submodule "Bundles/copy-as-rtf.tmbundle"]
+	path = Bundles/copy-as-rtf.tmbundle
+	url = git://github.com/drnic/copy-as-rtf-tmbundle.git
+[submodule "Bundles/wordpress.tmbundle"]
+	path = Bundles/wordpress.tmbundle
+	url = git://github.com/Gipetto/wordpress.tmbundle.git
