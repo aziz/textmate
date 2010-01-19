@@ -1,0 +1,36 @@
+[submodule "Bundles/git.tmbundle"]
+	path = Bundles/git.tmbundle
+	url = git://github.com/jcf/git-tmbundle.git
+[submodule "Bundles/github.tmbundle"]
+	path = Bundles/github.tmbundle
+	url = git://github.com/drnic/github-tmbundle.git
+[submodule "Bundles/mcss.tmbundle"]
+	path = Bundles/mcss.tmbundle
+	url = git://github.com/minimaldesign/mCSS.tmbundle.git
+[submodule "Bundles/mhtml.tmbundle"]
+	path = Bundles/mhtml.tmbundle
+	url = git://github.com/minimaldesign/mHTML.tmbundle.git
+[submodule "Bundles/javascript.tmbundle"]
+	path = Bundles/javascript.tmbundle
+	url = git://github.com/subtleGradient/javascript.tmbundle.git
+[submodule "Bundles/javascript-tools.tmbundle"]
+	path = Bundles/javascript-tools.tmbundle
+	url = git://github.com/subtleGradient/javascript-tools.tmbundle.git
+[submodule "Bundles/jquery.tmbundle"]
+	path = Bundles/jquery.tmbundle
+	url = git://github.com/kswedberg/jquery-tmbundle.git
+[submodule "Bundles/ruby.tmbundle"]
+	path = Bundles/ruby.tmbundle
+	url = git://github.com/drnic/ruby-tmbundle.git
+[submodule "Bundles/rubyonrails.tmbundle"]
+	path = Bundles/rubyonrails.tmbundle
+	url = git://github.com/drnic/ruby-on-rails-tmbundle.git
+[submodule "Bundles/latex.tmbundle"]
+	path = Bundles/latex.tmbundle
+	url = git://github.com/textmate/latex.tmbundle.git
+[submodule "Bundles/markdown.tmbundle"]
+	path = Bundles/markdown.tmbundle
+	url = git://github.com/fletcher/markdown.tmbundle.git
+[submodule "Bundles/ruby-amp.tmbundle"]
+	path = Bundles/ruby-amp.tmbundle
+	url = git://github.com/timcharper/rubyamp.git
