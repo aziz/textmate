@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>var ${1:win} = Titanium.UI.createWindow({ url:'$2.html'});
+// === Other options
+// title:''
+// hideTabBar: true, 
+// hideNavBar: true,
+// orientation:'either',
+// barColor:'#004e8c',
+// titleImage:'images/facebook_logo.png',
+// backgroundColor: '#fff',
+// backgroundImage:'brown_bg_482.png',
+// fullscreen:true,
+// views:[flipview]
+
+
+</string>
+	<key>name</key>
+	<string>Create Window</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>win</string>
+	<key>uuid</key>
+	<string>C5389A98-3B19-497D-BB0B-47AD5BD0FFB6</string>
+</dict>
+</plist>

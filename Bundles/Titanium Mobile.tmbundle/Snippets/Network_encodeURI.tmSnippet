@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>Titanium.Network.encodeURIComponent($1)</string>
+	<key>name</key>
+	<string>Network.encodeURI</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>encode</string>
+	<key>uuid</key>
+	<string>29872107-1ACE-46A7-A598-6C1A8836DBF4</string>
+</dict>
+</plist>

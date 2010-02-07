@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>var ${1:tf} = Titanium.UI.createTextField({
+	id: '${2:textfield}',
+	hintText: '$3',
+	value: '${4}',
+	autocorrect: ${5:false},
+	color: '${6:#000}',
+	backgroundColor: '${7:#fff}',
+	fontSize: ${8:16},
+	fontWeight:'${9:bold}',
+	textAlign: '${10:right | left | center}',
+	width: ${11:170},
+	height: ${12:30},
+	borderStyle: ${13:Titanium.UI.INPUT_BORDERSTYLE_NONE | Titanium.UI.INPUT_BORDERSTYLE_LINE | Titanium.UI.INPUT_BORDERSTYLE_BEZEL | Titanium.UI.INPUT_BORDERSTYLE_ROUNDED},
+	enableReturnKey: ${14:false},
+	returnKeyType: ${15:Titanium.UI.RETURNKEY_GO | Titanium.UI.RETURNKEY_GOOGLE | Titanium.UI.RETURNKEY_JOIN | Titanium.UI.RETURNKEY_NEXT |Titanium.UI.RETURNKEY_ROUTE | Titanium.UI.RETURNKEY_SEARCH | Titanium.UI.RETURNKEY_YAHOO | Titanium.UI.RETURNKEY_DONE | Titanium.UI.RETURNKEY_EMERGENCY_CALL},
+	keyboardType: ${16:Titanium.UI.KEYBOARD_ASCII | Titanium.UI.KEYBOARD_NUMBERS_PUNCTUATION | Titanium.UI.KEYBOARD_URL | Titanium.UI.KEYBOARD_NUMBER_PAD | Titanium.UI.KEYBOARD_PHONE_PAD | Titanium.UI.KEYBOARD_EMAIL_ADDRESS},
+	clearOnEdit: ${17:true},
+	clearButtonMode: ${18: Titanium.UI.INPUT_BUTTONMODE_NEVER | Titanium.UI.INPUT_BUTTONMODE_ALWAYS | Titanium.UI.INPUT_BUTTONMODE_ONFOCUS | Titanium.UI.INPUT_BUTTONMODE_ONBLUR},
+	leftButton: ${19:button name},  			
+	leftButtonMode: ${20:Titanium.UI.INPUT_BUTTONMODE_NEVER | Titanium.UI.INPUT_BUTTONMODE_ALWAYS | Titanium.UI.INPUT_BUTTONMODE_ONFOCUS | Titanium.UI.INPUT_BUTTONMODE_ONBLUR},
+	rightButton: ${21: button name},
+	rightButtonMode : ${22: Titanium.UI.INPUT_BUTTONMODE_NEVER | Titanium.UI.INPUT_BUTTONMODE_ALWAYS | Titanium.UI.INPUT_BUTTONMODE_ONFOCUS | Titanium.UI.INPUT_BUTTONMODE_ONBLUR}
+	});
+</string>
+	<key>name</key>
+	<string>Create TextField</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>input</string>
+	<key>uuid</key>
+	<string>18FBBE2C-F270-4112-B441-0F8DE51E84DA</string>
+</dict>
+</plist>

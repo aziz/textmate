@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>var ${1:xhr} = Titanium.Network.createHTTPClient();
+$1.onload = function() {
+	// this.responseText
+	$4
+};  			
+$1.open('${2:GET}', ${3:URL} );
+$1.send();
+</string>
+	<key>name</key>
+	<string>XHR</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>xhr</string>
+	<key>uuid</key>
+	<string>47E642B7-FE59-4723-8CFA-9232FEA404A4</string>
+</dict>
+</plist>
