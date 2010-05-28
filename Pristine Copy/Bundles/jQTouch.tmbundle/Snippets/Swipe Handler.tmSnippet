@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>\$('${1:#${2:element}}').swipe(function(e, data) {                
+    ${3:\$(this).append('You swiped &lt;strong&gt;' + data.direction + '&lt;/strong&gt;!');}
+});${0}
+</string>
+	<key>name</key>
+	<string>Swipe Handler</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>jqt</string>
+	<key>uuid</key>
+	<string>D4D4FF67-9E00-4E53-B277-760BC596CAD9</string>
+</dict>
+</plist>

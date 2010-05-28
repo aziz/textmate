@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string># Check if WebKit is running, if so refresh
+ps -xc|grep -sq Safari &amp;&amp; osascript -e 'tell app "WebKit"' -e 'activate' -e 'do JavaScript "window.location.reload();" in first document' -e 'end tell'
+</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>@r</string>
+	<key>name</key>
+	<string>Refresh Safari</string>
+	<key>output</key>
+	<string>discard</string>
+	<key>scope</key>
+	<string>text.html, source.css, source.js.prototype</string>
+	<key>uuid</key>
+	<string>047B06DF-EA70-4489-B384-67782E776E61</string>
+</dict>
+</plist>

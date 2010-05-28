@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string># Use the mmd_merge.pl script to compile multiple documents into one MMD source
+
+# The document must be saved first, in order for the script to find the referenced documents
+
+cd "${TM_FILEPATH%/*}"
+
+"${TM_MULTIMARKDOWN_PATH:-$HOME/Library/Application Support/MultiMarkdown}/Utilities/mmd_merge.pl"
+</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>keyEquivalent</key>
+	<string>^M</string>
+	<key>name</key>
+	<string>MMD Merge Document / Selection</string>
+	<key>output</key>
+	<string>openAsNewDocument</string>
+	<key>scope</key>
+	<string>text.html.markdown.multimarkdown</string>
+	<key>uuid</key>
+	<string>CAC8BE7C-78DD-489B-97F8-2EF8D896F91C</string>
+</dict>
+</plist>

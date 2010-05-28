@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>completionCommand</string>
+	<key>scope</key>
+	<string>source.ruby,source.js</string>
+	<key>settings</key>
+	<dict>
+		<key>completionCommand</key>
+		<string>#!/usr/bin/env ruby
+require 'yaml'
+
+Dir.glob("#{ENV["TM_PROJECT_DIRECTORY"]}/spec/fixtures/*.yml").each { |file_name|
+  puts "*"
+  data = YAML.load_file(file_name)
+  puts data.values.map { |n| n.keys }.flatten.select { |e| e.include?(ENV["TM_CURRENT_WORD"].to_s) }
+}
+
+open("#{ENV["HOME"]}/.easyopen_tmbundle#{ENV["TM_PROJECT_DIRECTORY"]}/def_index.dump", "r") { |io|
+	def_index = Marshal.load(io)
+	puts def_index[:name_locationIds].keys.select { |e| e.include?(ENV["TM_CURRENT_WORD"].to_s) }
+}</string>
+	</dict>
+	<key>uuid</key>
+	<string>4F261511-9691-422A-8894-088A10B99061</string>
+</dict>
+</plist>

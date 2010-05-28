@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+data = STDIN.read
+print data.split(/\.|\/\/.*$\n?/).uniq.join("\n"), data.match(/\n\Z/)||''
+</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>name</key>
+	<string>API List to Unique Keywords</string>
+	<key>output</key>
+	<string>replaceSelectedText</string>
+	<key>uuid</key>
+	<string>168AC018-81E3-4E53-AF5E-F819723B21DA</string>
+</dict>
+</plist>

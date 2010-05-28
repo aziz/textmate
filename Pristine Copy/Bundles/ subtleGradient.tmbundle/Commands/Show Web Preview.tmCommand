@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env osascript
+
+tell application "System Events"
+	click menu item "Show Web Preview" ¬
+		in menu "Window" of menu bar item "Window" ¬
+		in menu bar 1 of process "TextMate"
+end tell
+</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>^~@p</string>
+	<key>name</key>
+	<string>Show Web Preview Window</string>
+	<key>output</key>
+	<string>discard</string>
+	<key>scope</key>
+	<string>text.html.textile, text.html.markdown, source, source.js</string>
+	<key>uuid</key>
+	<string>C9CA5346-CE6D-4162-92ED-91D1B8F94E27</string>
+</dict>
+</plist>

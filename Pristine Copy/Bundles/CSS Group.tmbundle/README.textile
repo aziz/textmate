@@ -1,0 +1,35 @@
+h1. CSS Group Bundle
+
+The CSS Group bundle allows you to quickly add snippets to add @group tags which CSSEdit supports.
+
+h2. Installation 
+
+h3. 1. Install the bundle
+
+To install the bundle just run the following command.
+
+<pre>git pull git://github.com/webPragmatist/css-group-tmbundle.git ~/Library/Application Support/TextMate/Bundles/css-group.tmbundle
+</pre>
+
+h3. 2. Modify the CSS bundle to support folding
+
+Line 4 of the CSS Language bundle (L) CSS contains the foldingStartMarker foldingStopMarker variables that you need to replaces with the following:
+<pre>foldingStartMarker = '/\*\*(?!\*)|\{\s*($|/\*(?!.*?\*/.*\S))|\/\*\s*@group\s*.*\s*\*\/';
+foldingStopMarker = '(?<!\*)\*\*/|^\s*\}|\/*\s*@end\s*\*\/';</pre>
+
+h3. 3. Reload?
+
+I dunno reload your bundles r sumthin.
+
+h2. Usage
+
+To create a new group:
+<pre>cssg⇥</pre>
+
+To group the current selection:
+<pre>⌃⌥⌘c</pre>
+
+h2. Thanks!
+
+To the css-tricks for providing the code folding trick! 
+"Foldable TextMate CSS Groups":http://css-tricks.com/forums/viewtopic.php?f=8&t=2783

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>contactEmailRot13</key>
+	<string>me@svenlito.com</string>
+	<key>contactName</key>
+	<string>Sven Lito</string>
+	<key>description</key>
+	<string>Bundle Based on CSS3Please dot com CSS3 Snippets</string>
+	<key>mainMenu</key>
+	<dict>
+		<key>items</key>
+		<array>
+			<string>6387264A-A6EE-48DA-B3E1-557DCFF738DE</string>
+			<string>33DCC15A-0AD9-4220-91D6-E64632AFC412</string>
+			<string>6388B91E-F372-4C0F-A04C-4AD6B5E1DC56</string>
+			<string>61755678-CA02-4F4A-9EBD-224487308005</string>
+			<string>D040096D-8651-47C4-9DBF-6CB0276C8CDA</string>
+			<string>7FDDE845-849E-4EE4-933C-4E0CB70A721F</string>
+		</array>
+		<key>submenus</key>
+		<dict/>
+	</dict>
+	<key>name</key>
+	<string>css3please</string>
+	<key>ordering</key>
+	<array>
+		<string>61755678-CA02-4F4A-9EBD-224487308005</string>
+		<string>D040096D-8651-47C4-9DBF-6CB0276C8CDA</string>
+		<string>7FDDE845-849E-4EE4-933C-4E0CB70A721F</string>
+		<string>33DCC15A-0AD9-4220-91D6-E64632AFC412</string>
+		<string>6388B91E-F372-4C0F-A04C-4AD6B5E1DC56</string>
+		<string>6387264A-A6EE-48DA-B3E1-557DCFF738DE</string>
+	</array>
+	<key>uuid</key>
+	<string>04FF4910-0DC2-4277-AF68-F6D0ADBC4097</string>
+</dict>
+</plist>

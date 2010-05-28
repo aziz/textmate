@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string># first figure out a name for the result
+NAME="${TM_FILENAME:-untitled}"
+BASENAME="${NAME%.*}"
+DST="/tmp/TextMate/$BASENAME"
+
+if [ ! -d /tmp/TextMate ]; then
+mkdir /tmp/TextMate
+fi
+
+# Copy possible ancillary files
+cd "${TM_FILEPATH%/*}"
+cp *.png *.bib *.gif *.jpg *.pdf /tmp/TextMate
+
+
+cd "${TM_MULTIMARKDOWN_PATH:-$HOME/Library/Application Support/MultiMarkdown}"
+cd bin
+cat &gt; "$DST.txt"
+
+
+./mmd2PDFXeLaTeX.pl "$DST.txt"
+
+# open in the users PDF viewer (falling back on Preview)
+viewer=$(find_app "${TM_PDF_VIEWER:-Preview.app}")
+if [ $? = 0 ];
+	then open -a "$viewer" "$DST.pdf"
+	else echo "Could not find your PDF viewer: ‘${TM_PDF_VIEWER:-Preview.app}’"
+fi
+</string>
+	<key>fallbackInput</key>
+	<string>document</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>keyEquivalent</key>
+	<string>^P</string>
+	<key>name</key>
+	<string>Convert Document / Selection to PDF(XeLaTeX)</string>
+	<key>output</key>
+	<string>showAsHTML</string>
+	<key>scope</key>
+	<string>text.html.markdown.multimarkdown</string>
+	<key>uuid</key>
+	<string>F05719F8-89F2-48F0-88F6-8CFAEEF5BA91</string>
+</dict>
+</plist>

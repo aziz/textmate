@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>\$('${1:#${2:element}}').bind('pageAnimation${3:Start/}${4:End}', function(e, info){
+    if (info.direction == 'in') {
+        ${5:// Do some stuff}
+    } else {
+        ${6:// Do some other stuff}
+    }
+});${0}
+</string>
+	<key>name</key>
+	<string>Page Animation Handler</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>jqt</string>
+	<key>uuid</key>
+	<string>8B5B0568-CE1A-4640-8582-65FF5A09D4BC</string>
+</dict>
+</plist>

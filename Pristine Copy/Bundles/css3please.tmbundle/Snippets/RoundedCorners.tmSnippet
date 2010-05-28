@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>.box_round {
+     -moz-border-radius: ${1:12px}; /* FF1+ */
+  -webkit-border-radius: ${1:12px}; /* Saf3+, Chrome */
+          border-radius: ${1:12px}; /* Opera 10.5, IE 9 */
+}$0</string>
+	<key>name</key>
+	<string>RoundCorners</string>
+	<key>scope</key>
+	<string>source.css, text.html.basic</string>
+	<key>tabTrigger</key>
+	<string>css3pls</string>
+	<key>uuid</key>
+	<string>6388B91E-F372-4C0F-A04C-4AD6B5E1DC56</string>
+</dict>
+</plist>

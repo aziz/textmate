@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Autocomplete Image Filename</string>
+	<key>scope</key>
+	<string>meta.link.reference.def.markdown</string>
+	<key>settings</key>
+	<dict>
+		<key>completionCommand</key>
+		<string>cd "$TM_DIRECTORY"; ls *.png *.PNG  *.jpg *.JPG *.gif *.GIF | sort|uniq</string>
+		<key>disableDefaultCompletion</key>
+		<integer>1</integer>
+	</dict>
+	<key>uuid</key>
+	<string>7A27A176-318B-403F-9228-D40B55CC6E85</string>
+</dict>
+</plist>

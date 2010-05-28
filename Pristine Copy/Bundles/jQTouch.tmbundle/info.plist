@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>mainMenu</key>
+	<dict>
+		<key>items</key>
+		<array>
+			<string>3863C799-E5E1-4E4E-83AF-27A764363B07</string>
+			<string>514BBC51-6797-4D76-93CC-7455708A6BD7</string>
+			<string>CD9C1DF8-9DC0-4836-BE5A-DC5440B362D2</string>
+			<string>------------------------------------</string>
+			<string>3730B90E-C41D-402D-81D4-4C8EC50C8F05</string>
+			<string>2A0116CD-B024-4CDD-9C8A-1729AF0822AE</string>
+			<string>FBE88344-9578-4123-8EB3-4A208F8CEDC4</string>
+			<string>1A2FEA60-D72D-40C5-BC61-B84C42C2E004</string>
+			<string>------------------------------------</string>
+			<string>822CC233-9D2F-49E9-99C8-C63ECA57BEC2</string>
+			<string>------------------------------------</string>
+		</array>
+		<key>submenus</key>
+		<dict>
+			<key>822CC233-9D2F-49E9-99C8-C63ECA57BEC2</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>24572ED1-F7FE-4A7A-8555-C331790E4D13</string>
+					<string>8B5B0568-CE1A-4640-8582-65FF5A09D4BC</string>
+					<string>D4D4FF67-9E00-4E53-B277-760BC596CAD9</string>
+				</array>
+				<key>name</key>
+				<string>Event Handlers</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>name</key>
+	<string>jQTouch</string>
+	<key>ordering</key>
+	<array>
+		<string>3730B90E-C41D-402D-81D4-4C8EC50C8F05</string>
+		<string>2A0116CD-B024-4CDD-9C8A-1729AF0822AE</string>
+		<string>514BBC51-6797-4D76-93CC-7455708A6BD7</string>
+		<string>CD9C1DF8-9DC0-4836-BE5A-DC5440B362D2</string>
+		<string>24572ED1-F7FE-4A7A-8555-C331790E4D13</string>
+		<string>8B5B0568-CE1A-4640-8582-65FF5A09D4BC</string>
+		<string>3863C799-E5E1-4E4E-83AF-27A764363B07</string>
+		<string>FBE88344-9578-4123-8EB3-4A208F8CEDC4</string>
+		<string>1A2FEA60-D72D-40C5-BC61-B84C42C2E004</string>
+		<string>D4D4FF67-9E00-4E53-B277-760BC596CAD9</string>
+		<string>9C2037DC-863A-4145-B9C8-C0395A7A9574</string>
+	</array>
+	<key>uuid</key>
+	<string>B13CEAB9-1D2A-4A6B-9CEE-014F89AD1CC8</string>
+</dict>
+</plist>

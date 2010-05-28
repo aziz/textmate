@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>{
+    addGlossToIcon: ${1:true},
+    backSelector: '${2:.back, .cancel, .goback}',
+    cacheGetRequests: ${3:true},
+    cubeSelector: '${4:.cube}',
+    dissolveSelector: '${5:.dissolve}',
+    fadeSelector: '${6:.fade}',
+    fixedViewport: ${7:true},
+    flipSelector: '${8:.flip}',
+    formSelector: '${9:form}',
+    fullScreen: ${10:true},
+    fullScreenClass: '${11:fullscreen}',
+    icon: ${12:false},
+    initializeTouch: '${13:a, .touch}',
+    popSelector: '${14:.pop}',
+    preloadImages: ${15:false},
+    slideSelector: '${16:body &gt; * &gt; ul li a}',
+    slideupSelector: '${17:.slideup}',
+    startupScreen: ${18:null},
+    statusBar: '${19:default}',
+    submitSelector: '${20:.submit}',
+    swapSelector: '${21:.swap}',
+    useAnimations: ${22:true}
+}${0}</string>
+	<key>name</key>
+	<string>Init Options</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>jqt</string>
+	<key>uuid</key>
+	<string>2A0116CD-B024-4CDD-9C8A-1729AF0822AE</string>
+</dict>
+</plist>

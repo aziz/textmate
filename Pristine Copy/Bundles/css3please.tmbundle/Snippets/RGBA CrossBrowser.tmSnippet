@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1:element} {
+  background-color: #${2:000000};
+  background-color: rgba(${3:0}, ${4:0}, ${5:0}, ${6:1});  /* FF3+, Saf3+, Opera 10.10+, Chrome */
+            filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#99${2:000000}',endColorstr='#99${2:000000}'); /* IE6,IE7 */
+        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#99${2:000000}',endColorstr='#99${2:000000}')"; /* IE8 */
+}$0</string>
+	<key>name</key>
+	<string>RGBA CrossBrowser</string>
+	<key>scope</key>
+	<string>source.css, text.html.basic</string>
+	<key>tabTrigger</key>
+	<string>css3pls</string>
+	<key>uuid</key>
+	<string>33DCC15A-0AD9-4220-91D6-E64632AFC412</string>
+</dict>
+</plist>

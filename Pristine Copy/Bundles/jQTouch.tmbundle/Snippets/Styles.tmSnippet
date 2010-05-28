@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;style type="text/css" media="screen"&gt;@import "${1:http://jonathanstark.com/jqtouch/}jqtouch/jqtouch.css";&lt;/style&gt;
+&lt;style type="text/css" media="screen"&gt;@import "$1themes/jqt/theme.css";&lt;/style&gt;</string>
+	<key>name</key>
+	<string>Styles</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>jqt</string>
+	<key>uuid</key>
+	<string>1A2FEA60-D72D-40C5-BC61-B84C42C2E004</string>
+</dict>
+</plist>

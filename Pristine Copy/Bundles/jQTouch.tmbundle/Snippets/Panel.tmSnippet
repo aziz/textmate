@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;div id="${1:about}"&gt;
+    &lt;div class="toolbar"&gt;
+        &lt;h1&gt;${2:About}&lt;/h1&gt;
+        &lt;a class="back" href="#"&gt;${3:Back}&lt;/a&gt;
+    &lt;/div&gt;$0
+&lt;/div&gt;</string>
+	<key>name</key>
+	<string>Panel</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>jqt</string>
+	<key>uuid</key>
+	<string>3863C799-E5E1-4E4E-83AF-27A764363B07</string>
+</dict>
+</plist>

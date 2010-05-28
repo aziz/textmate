@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Autocomplete XSLT Files</string>
+	<key>scope</key>
+	<string>meta.header.multimarkdown</string>
+	<key>settings</key>
+	<dict>
+		<key>completionCommand</key>
+		<string>cd "${TM_MULTIMARKDOWN_PATH:-$HOME/Library/Application Support/MultiMarkdown}/XSLT"; ls *.xslt | perl -pi -e "s/\.xslt$//i" |sort|uniq</string>
+		<key>disableDefaultCompletion</key>
+		<integer>1</integer>
+	</dict>
+	<key>uuid</key>
+	<string>4A05D483-795D-4B71-8537-3417B8450AD8</string>
+</dict>
+</plist>

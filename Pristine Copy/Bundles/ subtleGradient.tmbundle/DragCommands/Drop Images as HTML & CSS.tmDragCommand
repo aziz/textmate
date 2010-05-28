@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+
+HTML = ENV['TM_SCOPE']=~/text.html/
+CSS  = ENV['TM_SCOPE']=~/source.css/
+
+OPTION  = 'OPTION'
+SHIFT   = 'SHIFT'
+CONTROL = 'CONTROL'
+COMMAND = 'COMMAND'
+
+DROP = {
+  :relative_path =&gt; ENV['TM_DROPPED_FILE'],
+  :path =&gt; ENV['TM_DROPPED_FILEPATH'],
+  :opts =&gt;(ENV['TM_MODIFIER_FLAGS'].split('|').sort rescue [] ),
+}
+
+DROP[:width], DROP[:height] = `sips -g pixelWidth -g pixelHeight "#{DROP[:path]}"`.scan(/(?:Width|Height): (\d+)/).flatten
+DROP[:width ] = DROP[:width ].to_i
+DROP[:height] = DROP[:height].to_i
+
+DROP[:basename] = DROP[:relative_path].gsub(/^.*\//,'').gsub(/\..*$/,'')
+DROP[:extension] = DROP[:relative_path].scan(/\..*?$/).first
+
+class String
+  def to_css_class
+    self.gsub(/^[^a-z]+/i,'')
+  end
+  def to_alt
+    self.gsub(/[-_](\w)/){' ' + $1.upcase}.gsub(/^(\w)/){$1.upcase}
+  end
+end
+def png_fix(selector='$10')
+  "\n* html .#{selector}{background-image: none;filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='${#{selector =~ /:hover/ ? 15 : 14}:#{DROP[:relative_path]}}', sizingMethod='${16:image/scale/crop}');\\}"
+end
+snippets = {}
+
+snippets[[]] = %{&lt;img src="#{DROP[:relative_path]}" width="#{DROP[:width]}" height="#{DROP[:height]}" alt="#{DROP[:basename].to_alt}"#{ENV['TM_XHTML']}&gt;}
+
+
+  
+snippets[[OPTION]] = ''
+snippets[[OPTION]] += %`&lt;style type="text/css" media="screen"&gt;` unless CSS
+snippets[[OPTION]] = &lt;&lt;-CSS
+&lt;style type="text/css" media="screen"&gt;${100:.${10:#{DROP[:basename].to_css_class}}{background: url('#{DROP[:relative_path]}') no-repeat top left;	height: #{DROP[:height]}px;	width:  #{DROP[:width]}px; display: block; overflow: hidden;\\}#{png_fix}}&lt;/style&gt;
+CSS
+snippets[[OPTION]] += %`$1&lt;div class="$10"&gt;${0:#{DROP[:basename].to_alt}}&lt;/div&gt;\n`
+
+
+  
+snippets[[OPTION,SHIFT]] = ''
+snippets[[OPTION,SHIFT]] += %`&lt;!-- 2 State Vertical Sprite --&gt;\n&lt;style type="text/css" media="screen"&gt;\n` unless CSS
+snippets[[OPTION,SHIFT]] = &lt;&lt;-CSS
+${100:.${10:#{DROP[:basename].to_css_class}}{background: url('#{DROP[:relative_path]}') no-repeat top left; line-height: #{DROP[:height]/2}px; height: #{DROP[:height]/2}px; width:  #{DROP[:width]}px; display: block; overflow: hidden;\\}#{png_fix}
+.$10:hover {background-position:bottom left;\\}#{png_fix('$10:hover')}
+}
+CSS
+snippets[[OPTION,SHIFT]] += %`&lt;/style&gt;\n$1&lt;a href="\#$10" class="$10"&gt;${0:#{DROP[:basename].to_alt}}&lt;/a&gt;\n` unless CSS
+
+  
+snippets[[CONTROL,OPTION,SHIFT]] = ''
+snippets[[CONTROL,OPTION,SHIFT]] += %`&lt;!-- 3 State Horizontal Sprite --&gt;\n&lt;style type="text/css" media="screen"&gt;\n` unless CSS
+snippets[[CONTROL,OPTION,SHIFT]] += &lt;&lt;-CSS
+${100:.${10:#{DROP[:basename].to_css_class}}{background: url('#{DROP[:relative_path]}') no-repeat top left;  line-height: #{DROP[:height]}px; height: #{DROP[:height]}px; width:  #{DROP[:width] / 3}px; display: block; overflow: hidden;\\}#{png_fix}
+.$10:hover {background-position:top center;\\}#{png_fix('$10:hover')}
+.$10:active{background-position:top right;\\}
+}
+CSS
+snippets[[CONTROL,OPTION,SHIFT]] += %`&lt;/style&gt;\n$1&lt;a href="\#$10" class="$10"&gt;${0:#{DROP[:basename].to_alt}}&lt;/a&gt;\n` unless CSS
+
+
+snippets[[]] = snippets.keys.inspect if CSS
+
+print snippets[DROP[:opts]]
+</string>
+	<key>draggedFileExtensions</key>
+	<array>
+		<string>png</string>
+		<string>jpg</string>
+		<string>jpeg</string>
+		<string>gif</string>
+		<string>svg</string>
+	</array>
+	<key>input</key>
+	<string>selection</string>
+	<key>name</key>
+	<string>Drop Images as HTML &amp; CSS</string>
+	<key>output</key>
+	<string>insertAsSnippet</string>
+	<key>scope</key>
+	<string>text.html.basic -string</string>
+	<key>uuid</key>
+	<string>03E509EC-FFB4-4653-A73C-2898C3D2C0A8</string>
+</dict>
+</plist>

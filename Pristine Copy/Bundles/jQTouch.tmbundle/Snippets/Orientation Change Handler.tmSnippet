@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>\$('body').bind('turn', function(e, data){
+    ${1:\$('${2:#${3:element}}').html('Orientation: ' + data.orientation);}
+});${0}
+</string>
+	<key>name</key>
+	<string>Orientation Change Handler</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>jqt</string>
+	<key>uuid</key>
+	<string>24572ED1-F7FE-4A7A-8555-C331790E4D13</string>
+</dict>
+</plist>

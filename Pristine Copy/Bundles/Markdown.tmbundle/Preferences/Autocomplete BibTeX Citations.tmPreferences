@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Autocomplete BibTeX Citations</string>
+	<key>scope</key>
+	<string>meta.citation.reference.multimarkdown, meta.citation.reference.literal.multimarkdown</string>
+	<key>settings</key>
+	<dict>
+		<key>completionCommand</key>
+		<string>cd "$TM_DIRECTORY";grep "^@" *.bib | sort | uniq | perl -pi -e "s/^.*{//" | perl -pi -e "s/,//"</string>
+		<key>disableDefaultCompletion</key>
+		<integer>1</integer>
+	</dict>
+	<key>uuid</key>
+	<string>48600DF2-8E98-40C0-9FBD-D9B50EE73633</string>
+</dict>
+</plist>

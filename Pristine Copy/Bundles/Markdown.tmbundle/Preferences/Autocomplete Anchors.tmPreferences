@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Autocomplete Anchors</string>
+	<key>scope</key>
+	<string>meta.link.reference, meta.image.reference</string>
+	<key>settings</key>
+	<dict>
+		<key>completionCommand</key>
+		<string>perl "${TM_MULTIMARKDOWN_PATH:-$HOME/Library/Application Support/MultiMarkdown}/Utilities/autocomplete.pl" |sort|uniq</string>
+		<key>disableDefaultCompletion</key>
+		<integer>1</integer>
+	</dict>
+	<key>uuid</key>
+	<string>6D74AB8C-1903-4EB5-B0B6-AF16527F131C</string>
+</dict>
+</plist>
